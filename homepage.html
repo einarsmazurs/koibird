@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>KOIBIRD</title>
+	<meta name="description" content="KOIBIRD landing page" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__columns">
+				<div class="header__column--left">
+					<form class="header__search-form">
+						<span>
+							<img src="img/search-icon.svg" alt="Search icon" />
+						</span>
+						<input type="text" />
+					</form>
+				</div>
+				<div class="header__column--logo">
+					<div class="header__logo">
+						<a href="homepage.html">
+							<img src="img/logo.svg" alt="Logo" />
+						</a>
+					</div>
+				</div>
+				<div class="header__column--right">
+					<ul>
+						<li><a href="#">Register</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">My account</a></li>
+					</ul>					
+					<ul>
+						<li><a href="#"><img src="img/wishlist-icon.svg" alt="Wishlist icon" /></a></li>
+						<li><a href="#"><img src="img/shopping-bag.svg" alt="Shopping icon" /></a></li>
+					</ul>
+				</div>
+				<div class="header__column--right-mobile">
+					<ul>
+						<li><a href="#"><img src="img/wishlist-icon.svg" alt="Wishlist icon" /></a></li>
+						<li><a href="#"><img src="img/shopping-bag.svg" alt="Shopping icon" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<nav class="header__nav">
+				<ul>
+					<li>
+						<button class="dropdownCategory" onclick="dropdownToggle()">shop by category</button>
+						<div class="header__nav--dropdown-content" id="dropdownCategory">
+							<a href="#"><span>outerwear</span></a>
+							<a href="#"><span>skis</span></a>
+							<a href="#"><span>knitwear</span></a>
+							<a href="#"><span>accessories</span></a>
+							<a href="#"><span>goggles</span></a>
+							<a href="#"><span>jackets</span></a>
+						</div>
+					</li>
+					<li>
+						<button class="dropdownBrand" onclick="dropdownToggle()">shop by brand</button>
+						<div class="header__nav--dropdown-content" id="dropdownBrand">
+							<a href="#"><span>gucci</span></a>
+							<a href="#"><span>baron clothing</span></a>
+							<a href="#"><span>annakiki</span></a>
+							<a href="#"><span>black crows</span></a>
+						</div>
+					</li>
+					<li>
+						<button class="dropdownCollection" onclick="dropdownToggle()">shop by collection</button>
+						<div class="header__nav--dropdown-content" id="dropdownCollection">
+							<a href="#"><span>winter</span></a>
+							<a href="#"><span>spring</span></a>
+							<a href="#"><span>summer</span></a>
+							<a href="#"><span>autumn</span></a>
+						</div>
+					</li>
+					<li>
+						<a href="#">about koibird</a>
+					</li>
+					<li>
+						<a href="#">pop-up shop</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="header__mobile-nav">
+			<button class="header__mobile-nav--toggler" onclick="mobileToggle()"><span></span></button>
+			<div id="mobileToggle" class="header__mobile-nav--menu">
+				<ul>
+					<li><a href="#"><img src="img/wishlist-icon.svg" alt="Wishlist icon" /></a></li>
+					<li><a href="#"><img src="img/shopping-bag.svg" alt="Shopping icon" /></a></li>
+				</ul>
+				<form class="header__search-form">
+					<span>
+						<img src="img/search-icon.svg" alt="Search icon" />
+					</span>
+					<input type="text" />
+				</form>
+				<a href="#">Register</a>
+				<a href="#">My account</a>
+				<a href="#">shop by category</a>
+				<a href="#">shop by brand</a>
+				<a href="#">shop by collection</a>
+				<a href="#">about koibird</a>
+				<a href="#">pop-up shop</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="main__banner">
+			<img src="img/banner.png" alt="Banner" />
+			<div class="main__banner--logo">
+				<img src="img/banner-logo.png" alt="Banner logo" />
+				<text><a href="#strapline">beauty and the piste <img src="img/banner-logo-link.svg" alt="Arrow" /></a>
+				</text>
+			</div>
+		</div>
+		<div id="strapline" class="strapline">
+			what we are shopping now
+		</div>
+		<div class="slider__title">
+			new in
+		</div>
+		<div class="wrapper">
+			<div class="slider__new">
+				<button class="slider-arrow">
+					<img src="img/arrow-left.png" alt="Arrow left" />
+				</button>
+				<div class="slider">
+					<ul>
+						<li class="slider-item">
+							<img src="img/jacket-black.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">BLACK JACKET</div>
+								</a>
+								<div class="brand">Gucci</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+						<li class="slider-item">
+							<img src="img/jacket-white.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">WHITE JACKET</div>
+								</a>
+								<div class="brand">Bacon Clothing</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+						</li>
+						<li class="slider-item">
+							<img src="img/jacket-yellow.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">YELLOW JACKET</div>
+								</a>
+								<div class="brand">Annakiki</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+						<li class="slider-item">
+							<img src="img/jacket-camouflage.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">CAMOUFLAGE JACKET</div>
+								</a>
+								<div class="brand">Black Crows</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button class="slider-arrow">
+					<img src="img/arrow-right.png" alt="Arrow right" />
+				</button>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="cta-grid">
+				<a><img src="img/cta-outerwear.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">outerwear</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+				<a><img src="img/cta-skis.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">skis</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+				<a><img src="img/cta-knitwear.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">knitwear</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+				<a><img src="img/cta-accessories.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">accessories</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+				<a><img src="img/cta-goggles.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">goggles</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+				<a><img src="img/cta-jackets.png" alt="CTA image" />
+					<div class="cta-grid__overlay"></div>
+					<text class="cta-grid__title">jackets</text>
+					<text class="cta-grid__subtitle">shop now</text>
+				</a>
+			</div>
+		</div>
+
+		<div class="slider__title">
+			best sellers
+		</div>
+		<div class="wrapper">
+			<div class="slider__best">
+				<button class="slider-arrow">
+					<img src="img/arrow-left.png" alt="Arrow left" />
+				</button>
+				<div class="slider">
+					<ul>
+						<li class="slider-item">
+							<img src="img/best-pink-jacket.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">PINK JACKET</div>
+								</a>
+								<div class="brand">Gucci</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+						<li class="slider-item">
+							<img src="img/best-pink-beanie.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">PINK KNIT BEANIE</div>
+								</a>
+								<div class="brand">Bacon Clothing</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+						</li>
+						<li class="slider-item">
+							<img src="img/best-gold-gloves.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">GOLD GLOVES</div>
+								</a>
+								<div class="brand">Annakiki</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+						<li class="slider-item">
+							<img src="img/best-handbag.png" alt="New">
+							<div class="slider-item__text">
+								<a href="#">
+									<div class="name">CREAM HANDBAG</div>
+								</a>
+								<div class="brand">Black Crows</div>
+								<div class="price">£000</div>
+								<a class="shop-link">shop now</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button class="slider-arrow">
+					<img src="img/arrow-right.png" alt="Arrow right" />
+				</button>
+			</div>
+		</div>
+
+		<div class="instagram">
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-1.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-2.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-3.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-4.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-5.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-6.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-7.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-8.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-9.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-10.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-11.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<a>
+				<div class="instagram__overlay"></div>
+				<img src="img/instagram-12.png" alt="Instagram picture" />
+				<text>shop the look</text>
+			</a>
+			<div class="instagram__cta">
+				#KOISKI
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__container">
+			<div class="footer__left">
+				<div class="footer__logo-container">
+					<a href="#">
+						<img src="img/logo.svg" alt="Logo" />
+					</a>
+				</div>
+					<ul class="footer__nav">
+						<li><a href="#">about</a></li>
+						<li><a href="#">terms & conditions</a></li>
+						<li><a href="#">privacy policy</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+			</div>
+			<div class="footer__right">
+				<form class="footer__signup-form">
+					<text>sign up for our newsletter</text>
+					<input type="email" placeholder="Enter Email" name="email" required>
+					<label>
+						<input type="checkbox" required> GDPR tick box
+					</label>
+					<div class="clearfix">
+						<button type="submit" class="footer__signup-form--submit">Submit ></button>
+					</div>
+				</form>
+			</div></div>
+		</div>
+	</footer>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
